@@ -32,7 +32,9 @@
         />
         <OrganismFooterNewsletter class="mt-12 md:mt-0" />
       </div>
-      <div class="mt-8 border-t border-gray-200 pt-8 grid md:grid-cols-3">
+      <div
+        class="mt-8 border-t border-gray-200 dark:border-gray-600 pt-8 grid md:grid-cols-3"
+      >
         <div class="flex">
           <DarkModeToggle />
         </div>

@@ -23,8 +23,8 @@ module.exports = {
         },
         light: {
           surface: defaultTheme.colors.gray['100'],
-          onSurfacePrimary: defaultTheme.colors.gray['600'],
-          onSurfaceSecondary: defaultTheme.colors.gray['700'],
+          onSurfacePrimary: '#2F495E',
+          onSurfaceSecondary: defaultTheme.colors.gray['600'],
           elevatedSurface: defaultTheme.colors.white,
           border: defaultTheme.colors.gray['300']
         },

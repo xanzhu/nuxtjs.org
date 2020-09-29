@@ -1,17 +1,17 @@
 <template>
   <div>
     <h4
-      class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
+      class="text-sm leading-5 font-semibold tracking-wider text-gray-500 uppercase"
     >
       Subscribe to our newsletter
     </h4>
-    <p class="mt-4 text-gray-500 text-base leading-6">
+    <p class="mt-4 text-gray-700 dark:text-gray-300 text-base leading-6">
       <span v-if="subscribed" class="text-green-500">
         {{ $t('homepage.newsletter.form.subscribed_messages.pre') }}
         {{ subscribedEmail }}
         {{ $t('homepage.newsletter.form.subscribed_messages.post') }}
       </span>
-      <span v-else-if="error" class="text-red-600 py-1">
+      <span v-else-if="error" class="text-orange-600 py-1">
         {{ error }}
       </span>
       <span v-else>
@@ -34,7 +34,7 @@
           required
           :placeholder="'Enter your ' + $t('homepage.newsletter.form.email')"
           aria-label="Newsletter"
-          class="appearance-none w-full px-3 py-3 pr-32 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline transition duration-150 ease-in-out"
+          class="appearance-none w-full px-3 py-3 pr-32 border border-gray-300 dark:border-gray-700 text-base leading-6 rounded-md text-gray-900 bg-light-surface dark:bg-dark-surface placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline transition duration-150 ease-in-out"
         />
         <div class="absolute p-1 right-0 mt-0 flex-shrink-0">
           <input
@@ -69,6 +69,7 @@ export default {
       if (!this.email.trim()) {
         return
       }
+      this.subscribed = false
       this.error = null
       this.pending = true
       try {

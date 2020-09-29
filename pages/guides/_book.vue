@@ -1,10 +1,10 @@
 <template>
-  <div class="shadow-nuxt">
+  <div>
     <div class="container mx-auto px-4 lg:flex pb-12">
       <TheMobileAsideNavNewDocs :links="links" />
       <TheAsideNavNewDocs :links="links" class="hidden lg:block" />
       <div
-        class="min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4"
+        class="min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 py-8"
       >
         <nuxt-child />
       </div>

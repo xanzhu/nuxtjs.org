@@ -1,7 +1,9 @@
 <template>
-  <div class="-mx-4 lg:mx-0 flex flex-col-reverse lg:flex-row">
+  <div
+    class="-mx-4 lg:mx-0 flex flex-col-reverse lg:flex-row bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow"
+  >
     <div
-      class="lg:min-h-screen w-full py-8 px-4 lg:static lg:overflow-visible lg:max-h-full lg:w-3/4"
+      class="lg:min-h-screen w-full p-8 lg:static lg:overflow-visible lg:max-h-full lg:w-3/4 border-r"
     >
       <LangFallback :doc-link="docLink" :lang-fallback="langFallback" />
 

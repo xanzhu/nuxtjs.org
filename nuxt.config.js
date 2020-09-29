@@ -93,7 +93,13 @@ export default {
   },
 
   // Auto import components, see https://github.com/nuxt/components
-  components: true,
+  components: [
+    '~/components', // shortcut to { path: '~/components' }
+    { path: '~/components/atoms/', prefix: 'atom' },
+    { path: '~/components/molecules/', prefix: 'molecule' },
+    { path: '~/components/organisms/', prefix: 'organism' },
+    { path: '~/components/templates/', prefix: 'template' }
+  ],
   colorMode: {
     preference: 'light' // disable system
   },

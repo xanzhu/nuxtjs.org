@@ -49,7 +49,7 @@ export default {
     ],
     bodyAttrs: {
       class: [
-        'font-sans font-medium bg-light-surface dark:bg-dark-surface text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary transition-colors duration-300 ease-linear'
+        'font-sans bg-light-surface dark:bg-dark-surface text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary transition-colors duration-300 ease-linear'
       ]
     }
   },
@@ -64,11 +64,19 @@ export default {
     // https://github.com/Developmint/nuxt-svg-loader/
     // 'nuxt-svg-loader',
     '@nuxtjs/svg',
+    // https://github.com/nuxt-community/google-fonts-module
+    '@nuxtjs/google-fonts',
     // https://github.com/Atinux/nuxt-tailwindcss/
     '@nuxtjs/tailwindcss',
     // https://pwa.nuxtjs.org
     '@nuxtjs/pwa'
   ],
+  googleFonts: {
+    families: {
+      'DM Sans': [300, 400, 500, 700]
+    },
+    display: 'swap'
+  },
   modules: [
     '~/modules/releases',
     '@nuxt/http',

@@ -5,11 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'Quicksand',
-          // ...defaultTheme.fontFamily.sans
-          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
-        ]
+        sans: ['DM Sans', ...defaultTheme.fontFamily.sans]
       },
       fontSize: {
         ss: '0.666666rem'
@@ -26,9 +22,9 @@ module.exports = {
           dark: '#07A377'
         },
         light: {
-          surface: '#F8FAFC',
-          onSurfacePrimary: '#2F495E',
-          onSurfaceSecondary: '#606F7B',
+          surface: defaultTheme.colors.gray['100'],
+          onSurfacePrimary: defaultTheme.colors.gray['600'],
+          onSurfaceSecondary: defaultTheme.colors.gray['700'],
           elevatedSurface: defaultTheme.colors.white,
           border: defaultTheme.colors.gray['300']
         },

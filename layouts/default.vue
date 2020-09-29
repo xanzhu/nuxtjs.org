@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeader />
+    <TemplateHeader />
     <main
       class="lg:block relative pt-16 lg:pt-24 bg-light-elevatedSurface dark:bg-dark-elevatedSurface transition-colors duration-300 ease-linear"
     >

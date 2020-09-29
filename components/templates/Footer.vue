@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow-nuxt transition-colors duration-300 ease-linear"
+    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow-nuxt transition-colors duration-300 ease-linear z-30"
   >
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="grid md:grid-cols-2 xl:grid-cols-4 md:gap-12 xl:gap-0">

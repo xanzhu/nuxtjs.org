@@ -1,28 +1,32 @@
 <template>
-  <div class="shadow-nuxt">
-    <div class="container mx-auto px-4 pt-16">
-      <div class="flex flex-wrap justify-between mb-8">
-        <div class="lg:w-6/12 lg:text-left text-center p-4 sm:p-0">
-          <i18n
-            path="resources.title"
-            tag="h1"
-            class="text-3xl xl:text-4xl text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary font-medium leading-normal mb-6 lg:pt-4"
-          >
-            {{ $t('resources.title') }}
-            <template v-slot:nuxt>
-              <AppTitle />
-            </template>
-          </i18n>
-          <h3
-            class="xl:text-lg text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary font-medium leading-relaxed mb-6"
-          >
-            {{ $t('resources.description') }}
-          </h3>
+  <div>
+    <TemplateHero>
+      <div class="container mx-auto px-4 pt-16">
+        <div class="flex flex-wrap justify-between mb-8">
+          <div class="lg:w-6/12 lg:text-left text-center p-4 sm:p-0">
+            <i18n
+              path="resources.title"
+              tag="h1"
+              class="text-3xl xl:text-4xl text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary font-medium leading-normal mb-6 lg:pt-4"
+            >
+              {{ $t('resources.title') }}
+              <template v-slot:nuxt>
+                <AppTitle />
+              </template>
+            </i18n>
+            <h3
+              class="xl:text-lg text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary font-medium leading-relaxed mb-6"
+            >
+              {{ $t('resources.description') }}
+            </h3>
+          </div>
+          <ThemesIllustration
+            class="w-2/3 mx-auto lg:mx-0 lg:w-5/12 lg:-mt-8 text-light-elevatedSurface dark:text-dark-elevatedSurface"
+          />
         </div>
-        <ThemesIllustration
-          class="w-2/3 mx-auto lg:mx-0 lg:w-5/12 lg:-mt-8 text-light-elevatedSurface dark:text-dark-elevatedSurface"
-        />
       </div>
+    </TemplateHero>
+    <div class="container mx-auto px-4 pt-16">
       <section class="flex flex-wrap -mx-4">
         <NuxtLink :to="{ name: 'themes' }" class="block w-full lg:w-1/2 p-4">
           <div

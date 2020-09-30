@@ -1,6 +1,7 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-30 bg-light-elevatedSurface dark:bg-dark-elevatedSurface border-b border-light-border dark:border-dark-border lg:border-0 h-16 lg:h-24 transition-colors duration-300 ease-linear shadow"
+    class="fixed top-0 left-0 right-0 z-30 bg-light-elevatedSurface dark:bg-dark-elevatedSurface border-b border-light-border dark:border-dark-border lg:border-0 h-16 lg:h-24 transition-colors duration-300 ease-linear"
+    :class="{ shadow: !onTop }"
   >
     <div
       class="container relative mx-auto px-4 flex items-center lg:py-6 h-full"
@@ -19,67 +20,11 @@ NUXTJS
         />
       </NuxtLink>
       <!-- Center Navigation -->
-      <nav class="hidden lg:flex lg:pt-1 xl:pt-0 mx-auto">
-        <ul class="flex text-center font-medium tracking-wide">
-          <li
-            v-for="link in $t('header.links')"
-            :key="link.slug"
-            class="xl:px-4 lg:py-0 lg:px-2 py-2"
-          >
-            <NuxtLink
-              v-if="link.type === 'newDocs'"
-              class="block hover:no-underline hover:text-nuxt-lightgreen text-nuxt-gray dark:text-dark-onSurfacePrimary"
-              :to="
-                localePath({
-                  name: link.routeName,
-                  params: {
-                    section: 'guides',
-                    book: 'get-started',
-                    slug: 'installation'
-                  }
-                })
-              "
-            >
-              {{ link.name }}
-              <span
-                class="bg-green-200 dark:text-black text-ss align-top px-1 rounded-sm lowercase"
-              >
-                beta
-              </span>
-            </NuxtLink>
-            <NuxtLink
-              v-if="link.type === 'dynamic'"
-              class="block hover:no-underline hover:text-nuxt-lightgreen text-nuxt-gray dark:text-dark-onSurfacePrimary"
-              :to="
-                localePath({
-                  name: link.routeName,
-                  params: { section: link.slug }
-                })
-              "
-            >
-              {{ link.name }}
-            </NuxtLink>
-            <NuxtLink
-              v-else-if="link.type === 'static'"
-              class="block hover:no-underline hover:text-nuxt-lightgreen text-nuxt-gray dark:text-dark-onSurfacePrimary"
-              :to="localePath({ name: link.slug })"
-            >
-              {{ link.name }}
-            </NuxtLink>
-            <a
-              v-else-if="link.type === 'external'"
-              :key="link.href"
-              :href="link.href"
-              class="block hover:no-underline hover:text-nuxt-lightgreen text-nuxt-gray dark:text-dark-onSurfacePrimary"
-            >
-              {{ link.name }}
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <OrganismHeaderLinks />
       <!-- Algolia Search -->
       <AlgoliaSearch />
     </div>
+    <!-- <OrganismHeaderDropdown /> -->
   </header>
 </template>
 
@@ -89,6 +34,22 @@ import NuxtLogo from '~/assets/images/logo.svg?inline'
 export default {
   components: {
     NuxtLogo
+  },
+  data() {
+    return {
+      onTop: true
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      this.onTop = window.pageYOffset === 0
+    }
   }
 }
 </script>

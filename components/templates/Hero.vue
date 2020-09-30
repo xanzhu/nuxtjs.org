@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative shadow-hero bg-light-elevatedSurface dark:bg-dark-elevatedSurface z-40"
+    class="relative shadow bg-light-elevatedSurface dark:bg-dark-elevatedSurface"
   >
     <slot />
   </div>

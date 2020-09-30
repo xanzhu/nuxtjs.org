@@ -20,7 +20,7 @@
     </p>
     <ClientOnly>
       <form
-        class="relative mt-4 flex sm:max-w-md"
+        class="relative mt-4 flex sm:max-w-md mx-auto"
         data-cy="newsletter"
         @submit.prevent="subscribe"
       >

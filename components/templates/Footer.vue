@@ -1,36 +1,38 @@
 <template>
   <div
-    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow-nuxt transition-colors duration-300 ease-linear z-30"
+    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow transition-colors duration-300 ease-linear z-30"
   >
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="grid md:grid-cols-2 xl:grid-cols-4 md:gap-12 xl:gap-0">
-        <OrganismFooterLinks
-          title="Resources"
-          :links="[
-            { title: 'Partners' },
-            { title: 'Themes' },
-            { title: 'Video courses' }
-          ]"
-        />
-        <OrganismFooterLinks
-          class="mt-12 md:mt-0"
-          title="Support"
-          :links="[
-            { title: 'Consultancy' },
-            { title: 'The Nuxt Shop' },
-            { title: 'Find a Nuxt job' }
-          ]"
-        />
-        <OrganismFooterLinks
-          class="mt-12 md:mt-0"
-          title="Community"
-          :links="[
-            { title: 'Contributors' },
-            { title: 'Backers & Sponsors' },
-            { title: 'Contribution guide' }
-          ]"
-        />
-        <OrganismFooterNewsletter class="mt-12 md:mt-0" />
+    <div
+      class="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center lg:text-left"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+        <div class="lg:col-span-4 grid sm:grid-cols-3 gap-8">
+          <OrganismFooterLinks
+            title="Resources"
+            :links="[
+              { title: 'Partners' },
+              { title: 'Themes' },
+              { title: 'Video courses' }
+            ]"
+          />
+          <OrganismFooterLinks
+            title="Support"
+            :links="[
+              { title: 'Consultancy' },
+              { title: 'The Nuxt Shop' },
+              { title: 'Find a Nuxt job' }
+            ]"
+          />
+          <OrganismFooterLinks
+            title="Community"
+            :links="[
+              { title: 'Contributors' },
+              { title: 'Backers & Sponsors' },
+              { title: 'Contribution guide' }
+            ]"
+          />
+        </div>
+        <OrganismFooterNewsletter class="inline-block lg:col-span-2" />
       </div>
       <div
         class="mt-8 border-t border-gray-200 dark:border-gray-600 pt-8 grid md:grid-cols-3"

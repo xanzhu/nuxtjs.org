@@ -8,7 +8,7 @@
       >
         <NuxtLink
           v-if="link.type === 'newDocs'"
-          class="block hover:no-underline hover:text-nuxt-lightgreen text-nuxt-gray dark:text-dark-onSurfacePrimary"
+          class="block hover:no-underline hover:text-nuxt-lightgreen text-gray-600 dark:text-dark-onSurfacePrimary"
           :to="
             localePath({
               name: link.routeName,

@@ -17,44 +17,44 @@ module.exports = {
   header: {
     links: [
       {
-        name: 'Guides',
+        name: 'Discover',
         slug: 'guides',
-        type: 'newDocs',
+        type: 'dynamic',
         routeName: 'guides-book-slug'
       },
       {
-        name: 'Guide',
+        name: 'Learn',
         slug: 'guide',
         type: 'dynamic',
         routeName: 'section-slug'
       },
       {
-        name: 'API',
+        name: 'Explore',
         slug: 'api',
         type: 'dynamic',
         routeName: 'section-slug'
       },
       {
-        name: 'Examples',
+        name: 'Campfire',
         slug: 'examples',
         type: 'dynamic',
         routeName: 'section-slug'
       },
       {
-        name: 'FAQ',
+        name: 'Community',
         slug: 'faq',
         type: 'dynamic',
         routeName: 'section-slug'
-      },
-      {
-        name: 'Resources',
-        slug: 'resources',
-        type: 'static'
-      },
-      {
-        name: 'Blog',
-        slug: 'blog',
-        type: 'static'
+        // },
+        // {
+        //   name: 'Resources',
+        //   slug: 'resources',
+        //   type: 'static'
+        // },
+        // {
+        //   name: 'Blog',
+        //   slug: 'blog',
+        //   type: 'static'
       }
     ],
     search: {

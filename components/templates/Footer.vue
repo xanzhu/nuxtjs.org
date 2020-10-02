@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow transition-colors duration-300 ease-linear z-30"
+    class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow-reverse transition-colors duration-300 ease-linear z-30 pt-4 mt-1"
   >
     <div
-      class="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center lg:text-left"
+      class="container mx-auto py-8 px-4 sm:px-6 lg:p-8 text-center lg:text-left"
     >
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
         <div class="lg:col-span-4 grid sm:grid-cols-3 gap-8">

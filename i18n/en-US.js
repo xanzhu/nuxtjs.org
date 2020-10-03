@@ -15,85 +15,221 @@ module.exports = {
   },
   header: {
     links: {
-      discover: [
-        {
-          name: 'The Framework'
-        },
-        {
-          name: 'Use Cases'
-        },
-        {
-          name: 'The Company'
-        },
-        {
-          name: 'Our Partners'
+      discover: {
+        framework: [
+          {
+            icon: 'home',
+            title: 'Our Philosophy',
+            to: '/guides/concepts'
+          },
+          {
+            icon: 'home',
+            title: 'Open Source',
+            to: '/guides/features'
+          },
+          {
+            icon: 'home',
+            title: 'Testimonials',
+            to: '/guides/directory-structure'
+          }
+        ],
+        use_cases: [
+          {
+            icon: 'home',
+            title: 'Server Side Rendering',
+            to: '/guides/configuration-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Static Website',
+            to: '/guides/components-glossary'
+          },
+          {
+            icon: 'JAMStack Ready',
+            title: 'Internals',
+            to: '/guides/internals-glossary'
+          }
+        ],
+        featured: {
+          icon: 'home',
+          button: 'Find a partner',
+          title: 'The Nuxt Partners',
+          description: 'Discover companies partners.',
+          to: '/guides/get-started'
         }
-      ],
-      learn: [
-        {
-          name: 'Get Started'
-        },
-        {
-          name: 'Concepts'
-        },
-        {
-          name: 'Features'
-        },
-        {
-          name: 'Directory Structure'
-        },
-        {
-          name: 'API - Configuration'
-        },
-        {
-          name: 'API - Internals'
-        },
-        {
-          name: 'API - Components'
+      },
+      learn: {
+        guides: [
+          {
+            icon: 'home',
+            title: 'Concepts',
+            to: '/guides/concepts'
+          },
+          {
+            icon: 'home',
+            title: 'Features',
+            to: '/guides/features'
+          },
+          {
+            icon: 'home',
+            title: 'Directory Structure',
+            to: '/guides/directory-structure'
+          }
+        ],
+        api: [
+          {
+            icon: 'home',
+            title: 'Configuration',
+            to: '/guides/configuration-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Components',
+            to: '/guides/components-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Internals',
+            to: '/guides/internals-glossary'
+          }
+        ],
+        featured: {
+          icon: 'home',
+          button: 'Get Started',
+          title: 'Ready to give it a go?',
+          description: 'Learn how to use NuxtJS for your website.',
+          to: '/guides/get-started'
         }
-      ],
-      explore: [
-        {
-          name: 'Integrations'
-        },
-        {
-          name: 'Examples'
-        },
-        {
-          name: 'Themes'
-        },
-        {
-          name: 'Video Courses'
+      },
+      explore: {
+        guides: [
+          {
+            icon: 'home',
+            title: 'Concepts',
+            to: '/guides/concepts'
+          },
+          {
+            icon: 'home',
+            title: 'Features',
+            to: '/guides/features'
+          },
+          {
+            icon: 'home',
+            title: 'Directory Structure',
+            to: '/guides/directory-structure'
+          }
+        ],
+        api: [
+          {
+            icon: 'home',
+            title: 'Configuration',
+            to: '/guides/configuration-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Components',
+            to: '/guides/components-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Internals',
+            to: '/guides/internals-glossary'
+          }
+        ],
+        featured: {
+          icon: 'home',
+          button: 'Get Started',
+          title: 'Mastering Nuxt',
+          description: 'Learn how to use NuxtJS for your website.',
+          to: '/guides/get-started'
         }
-      ],
-      campfire: [
-        {
-          name: 'Articles'
-        },
-        {
-          name: 'Releases'
-        },
-        {
-          name: 'Newsletters'
-        },
-        {
-          name: 'Discord'
+      },
+      campfire: {
+        guides: [
+          {
+            icon: 'home',
+            title: 'Concepts',
+            to: '/guides/concepts'
+          },
+          {
+            icon: 'home',
+            title: 'Features',
+            to: '/guides/features'
+          },
+          {
+            icon: 'home',
+            title: 'Directory Structure',
+            to: '/guides/directory-structure'
+          }
+        ],
+        api: [
+          {
+            icon: 'home',
+            title: 'Configuration',
+            to: '/guides/configuration-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Components',
+            to: '/guides/components-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Internals',
+            to: '/guides/internals-glossary'
+          }
+        ],
+        featured: {
+          icon: 'home',
+          button: 'Get Started',
+          title: 'Discord Server',
+          description: 'Learn how to use NuxtJS for your website.',
+          to: '/guides/get-started'
         }
-      ],
-      community: [
-        {
-          name: 'Events'
-        },
-        {
-          name: 'Jobs'
-        },
-        {
-          name: 'The Nuxt Shop'
-        },
-        {
-          name: 'Backers & Sponsors'
+      },
+      community: {
+        guides: [
+          {
+            icon: 'home',
+            title: 'Concepts',
+            to: '/guides/concepts'
+          },
+          {
+            icon: 'home',
+            title: 'Features',
+            to: '/guides/features'
+          },
+          {
+            icon: 'home',
+            title: 'Directory Structure',
+            to: '/guides/directory-structure'
+          }
+        ],
+        api: [
+          {
+            icon: 'home',
+            title: 'Configuration',
+            to: '/guides/configuration-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Components',
+            to: '/guides/components-glossary'
+          },
+          {
+            icon: 'home',
+            title: 'Internals',
+            to: '/guides/internals-glossary'
+          }
+        ],
+        featured: {
+          icon: 'home',
+          button: 'Get Started',
+          title: 'Shop ou Open Collective',
+          description: 'Learn how to use NuxtJS for your website.',
+          to: '/guides/get-started'
         }
-      ]
+      }
     },
     old_links: [
       {

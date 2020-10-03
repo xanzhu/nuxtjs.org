@@ -4,7 +4,7 @@
     :class="{ shadow: !onTop }"
   >
     <div
-      class="container relative mx-auto px-4 flex items-center lg:py-6 h-full"
+      class="relative container mx-auto px-4 sm:px-6 lg:px-8 lg:py-6 flex items-center"
     >
       <!-- Logo -->
       <NuxtLink
@@ -20,11 +20,11 @@ NUXTJS
         />
       </NuxtLink>
       <!-- Center Navigation -->
-      <OrganismHeaderLinks />
+      <OrganismHeaderLinks v-model="currentDropdown" />
       <!-- Algolia Search -->
       <AlgoliaSearch />
     </div>
-    <!-- <OrganismHeaderDropdown /> -->
+    <OrganismHeaderDropdown :current="currentDropdown" />
   </header>
 </template>
 
@@ -37,7 +37,8 @@ export default {
   },
   data() {
     return {
-      onTop: true
+      onTop: true,
+      currentDropdown: ''
     }
   },
   mounted() {

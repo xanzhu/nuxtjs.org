@@ -9,13 +9,93 @@ module.exports = {
     version: 'Version'
   },
   iso: 'en',
-
   links: {
     download: 'Download',
     live_edit: 'Live Edit'
   },
   header: {
-    links: [
+    links: {
+      discover: [
+        {
+          name: 'The Framework'
+        },
+        {
+          name: 'Use Cases'
+        },
+        {
+          name: 'The Company'
+        },
+        {
+          name: 'Our Partners'
+        }
+      ],
+      learn: [
+        {
+          name: 'Get Started'
+        },
+        {
+          name: 'Concepts'
+        },
+        {
+          name: 'Features'
+        },
+        {
+          name: 'Directory Structure'
+        },
+        {
+          name: 'API - Configuration'
+        },
+        {
+          name: 'API - Internals'
+        },
+        {
+          name: 'API - Components'
+        }
+      ],
+      explore: [
+        {
+          name: 'Integrations'
+        },
+        {
+          name: 'Examples'
+        },
+        {
+          name: 'Themes'
+        },
+        {
+          name: 'Video Courses'
+        }
+      ],
+      campfire: [
+        {
+          name: 'Articles'
+        },
+        {
+          name: 'Releases'
+        },
+        {
+          name: 'Newsletters'
+        },
+        {
+          name: 'Discord'
+        }
+      ],
+      community: [
+        {
+          name: 'Events'
+        },
+        {
+          name: 'Jobs'
+        },
+        {
+          name: 'The Nuxt Shop'
+        },
+        {
+          name: 'Backers & Sponsors'
+        }
+      ]
+    },
+    old_links: [
       {
         name: 'Discover',
         slug: 'guides',

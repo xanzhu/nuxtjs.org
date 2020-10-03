@@ -9,186 +9,28 @@
       From: "opacity-100 translate-y-0"
       To: "opacity-0 -translate-y-1"
   -->
-  <div class="hidden md:block absolute inset-x-0 transform shadow bg-white">
-    <div
-      class="mx-auto container grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16"
-    >
-      <a
-        href="#"
-        class="-m-3 p-3 flex flex-col justify-between space-y-6 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-      >
-        <div
-          class="space-x-4 flex md:h-full lg:flex-col lg:space-x-0 lg:space-y-4"
-        >
-          <div class="flex-shrink-0">
-            <span
-              class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-            >
-              <!-- Heroicon name: chart-bar -->
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="space-y-2 md:flex-1 md:flex md:flex-col md:justify-between lg:space-y-4"
-          >
-            <div class="space-y-1">
-              <p class="text-base leading-6 font-medium text-gray-900">
-                Analytics
-              </p>
-              <p class="text-sm leading-5 text-gray-500">
-                Get a better understanding of where your traffic is coming from.
-              </p>
-            </div>
-            <p class="text-sm leading-5 font-medium text-indigo-600">
-              Learn more &rarr;
-            </p>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="-m-3 p-3 flex flex-col justify-between space-y-6 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-      >
-        <div
-          class="space-x-4 flex md:h-full lg:flex-col lg:space-x-0 lg:space-y-4"
-        >
-          <div class="flex-shrink-0">
-            <span
-              class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-            >
-              <!-- Heroicon name: cursor-click -->
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="space-y-2 md:flex-1 md:flex md:flex-col md:justify-between lg:space-y-4"
-          >
-            <div class="space-y-1">
-              <p class="text-base leading-6 font-medium text-gray-900">
-                Engagement
-              </p>
-              <p class="text-sm leading-5 text-gray-500">
-                Speak directly to your customers in a more meaningful way.
-              </p>
-            </div>
-            <p class="text-sm leading-5 font-medium text-indigo-600">
-              Learn more &rarr;
-            </p>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="-m-3 p-3 flex flex-col justify-between space-y-6 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-      >
-        <div
-          class="space-x-4 flex md:h-full lg:flex-col lg:space-x-0 lg:space-y-4"
-        >
-          <div class="flex-shrink-0">
-            <span
-              class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-            >
-              <!-- Heroicon name: shield-check -->
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="space-y-2 md:flex-1 md:flex md:flex-col md:justify-between lg:space-y-4"
-          >
-            <div class="space-y-1">
-              <p class="text-base leading-6 font-medium text-gray-900">
-                Security
-              </p>
-              <p class="text-sm leading-5 text-gray-500">
-                Your customer data will be safe and secure.
-              </p>
-            </div>
-            <p class="text-sm leading-5 font-medium text-indigo-600">
-              Learn more &rarr;
-            </p>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="-m-3 p-3 flex flex-col justify-between space-y-6 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-      >
-        <div
-          class="space-x-4 flex md:h-full lg:flex-col lg:space-x-0 lg:space-y-4"
-        >
-          <div class="flex-shrink-0">
-            <span
-              class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-            >
-              <!-- Heroicon name: view-grid -->
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="space-y-2 md:flex-1 md:flex md:flex-col md:justify-between lg:space-y-4"
-          >
-            <div class="space-y-1">
-              <p class="text-base leading-6 font-medium text-gray-900">
-                Integrations
-              </p>
-              <p class="text-sm leading-5 text-gray-500">
-                Connect with third-party tools that you're already using.
-              </p>
-            </div>
-            <p class="text-sm leading-5 font-medium text-indigo-600">
-              Learn more &rarr;
-            </p>
-          </div>
-        </div>
-      </a>
+  <div
+    class="absolute inset-x-0 transform shadow-dropdown bg-white"
+    :class="{ hidden: !current }"
+  >
+    <div class="mx-auto container px-4 sm:px-6 lg:px-8">
+      <MoleculeDropdownLearn />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    current: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    links() {
+      return this.current.length ? this.$t('header.links')[this.current] : null
+    }
+  }
+}
+</script>

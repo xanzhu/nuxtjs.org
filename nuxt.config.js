@@ -82,9 +82,9 @@ export default {
     '@nuxt/http',
     '@nuxt/content',
     'nuxt-i18n',
+    '@nuxtjs/svg-sprite',
     'vue-scrollto/nuxt'
   ],
-
   pwa: {
     manifest: {
       name: 'NuxtJS',

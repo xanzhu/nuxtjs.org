@@ -20,7 +20,7 @@ NUXTJS
         />
       </NuxtLink>
       <!-- Center Navigation -->
-      <OrganismHeaderLinks v-model="currentDropdown" />
+      <OrganismHeaderNav v-model="currentDropdown" />
       <!-- Algolia Search -->
       <AlgoliaSearch />
     </div>

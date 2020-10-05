@@ -61,34 +61,34 @@ module.exports = {
       learn: {
         guides: [
           {
-            icon: 'home',
+            icon: 'wind',
             title: 'Concepts',
             to: '/guides/concepts'
           },
           {
-            icon: 'home',
+            icon: 'zap',
             title: 'Features',
             to: '/guides/features'
           },
           {
-            icon: 'home',
+            icon: 'folder',
             title: 'Directory Structure',
             to: '/guides/directory-structure'
           }
         ],
         api: [
           {
-            icon: 'home',
+            icon: 'settings',
             title: 'Configuration',
             to: '/guides/configuration-glossary'
           },
           {
-            icon: 'home',
+            icon: 'hexagon',
             title: 'Components',
             to: '/guides/components-glossary'
           },
           {
-            icon: 'home',
+            icon: 'sliders',
             title: 'Internals',
             to: '/guides/internals-glossary'
           }
@@ -225,7 +225,7 @@ module.exports = {
         featured: {
           icon: 'home',
           button: 'Get Started',
-          title: 'Shop ou Open Collective',
+          title: 'GitHub Stars',
           description: 'Learn how to use NuxtJS for your website.',
           to: '/guides/get-started'
         }

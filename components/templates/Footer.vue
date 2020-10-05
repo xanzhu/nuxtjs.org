@@ -7,7 +7,7 @@
     >
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
         <div class="lg:col-span-4 grid sm:grid-cols-3 gap-8">
-          <OrganismFooterLinks
+          <MoleculeListLinks
             title="Resources"
             :links="[
               { title: 'Partners' },
@@ -15,7 +15,7 @@
               { title: 'Video courses' }
             ]"
           />
-          <OrganismFooterLinks
+          <MoleculeListLinks
             title="Support"
             :links="[
               { title: 'Consultancy' },
@@ -23,7 +23,7 @@
               { title: 'Find a Nuxt job' }
             ]"
           />
-          <OrganismFooterLinks
+          <MoleculeListLinks
             title="Community"
             :links="[
               { title: 'Contributors' },

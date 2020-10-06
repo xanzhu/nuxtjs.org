@@ -8,7 +8,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
         <div class="lg:col-span-4 grid sm:grid-cols-3 gap-8">
           <MoleculeListLinks
-            title="Resources"
+            title="TODO"
             :links="[
               { title: 'Partners' },
               { title: 'Themes' },
@@ -16,7 +16,7 @@
             ]"
           />
           <MoleculeListLinks
-            title="Support"
+            title="TODO"
             :links="[
               { title: 'Consultancy' },
               { title: 'The Nuxt Shop' },
@@ -24,11 +24,14 @@
             ]"
           />
           <MoleculeListLinks
-            title="Community"
+            title="Company"
             :links="[
-              { title: 'Contributors' },
-              { title: 'Backers & Sponsors' },
-              { title: 'Contribution guide' }
+              { title: 'About us', to: '/about' },
+              {
+                title: 'Careers',
+                href: 'https://www.welcometothejungle.com/en/companies/nuxtjs'
+              },
+              { title: 'Contact', to: '/contact' }
             ]"
           />
         </div>

@@ -16,38 +16,38 @@ module.exports = {
   header: {
     links: {
       discover: {
-        framework: [
+        nuxtjs: [
           {
-            icon: 'home',
-            title: 'Our Philosophy',
-            to: '/guides/concepts'
+            icon: 'coffee',
+            title: 'The Framework',
+            to: '/discover/the-framework'
           },
           {
-            icon: 'home',
-            title: 'Open Source',
-            to: '/guides/features'
+            icon: 'zap',
+            title: 'Features',
+            to: '/discover/features'
           },
           {
-            icon: 'home',
+            icon: 'heart',
             title: 'Testimonials',
-            to: '/guides/directory-structure'
+            to: '/discover/testimonials'
           }
         ],
-        use_cases: [
+        solutions: [
           {
-            icon: 'home',
+            icon: 'cloud',
+            title: 'Single Page Application',
+            to: '/discover/signle-page-application'
+          },
+          {
+            icon: 'cloud-rain',
             title: 'Server Side Rendering',
-            to: '/guides/configuration-glossary'
+            to: '/discover/server-side-rendering'
           },
           {
-            icon: 'home',
-            title: 'Static Website',
-            to: '/guides/components-glossary'
-          },
-          {
-            icon: 'JAMStack Ready',
-            title: 'Internals',
-            to: '/guides/internals-glossary'
+            icon: 'cloud-lightning',
+            title: 'Static Site Generator',
+            to: '/discover/static-site-generator'
           }
         ],
         featured: {
@@ -102,38 +102,40 @@ module.exports = {
         }
       },
       explore: {
-        guides: [
+        integrations: [
           {
-            icon: 'home',
-            title: 'Concepts',
-            to: '/guides/concepts'
+            icon: 'box',
+            title: '3rd party libraries',
+            to: '/resources/libraries'
           },
           {
-            icon: 'home',
-            title: 'Features',
-            to: '/guides/features'
+            icon: 'server',
+            title: 'Hosting',
+            to: '/resources/hosting'
           },
           {
-            icon: 'home',
-            title: 'Directory Structure',
-            to: '/guides/directory-structure'
+            icon: 'package',
+            title: 'Modules',
+            href:
+              'https://vuetelemetry.com/explore?framework.slug=nuxtjs&_sort=rank%3Aasc'
           }
         ],
-        api: [
+        resources: [
           {
-            icon: 'home',
-            title: 'Configuration',
-            to: '/guides/configuration-glossary'
+            icon: 'monitor',
+            title: 'Showcases',
+            href:
+              'https://vuetelemetry.com/explore?framework.slug=nuxtjs&_sort=rank%3Aasc'
           },
           {
-            icon: 'home',
-            title: 'Components',
-            to: '/guides/components-glossary'
+            icon: 'layout',
+            title: 'Themes',
+            to: '/resources/themes'
           },
           {
-            icon: 'home',
-            title: 'Internals',
-            to: '/guides/internals-glossary'
+            icon: 'video',
+            title: 'Video Courses',
+            to: '/resources/video-courses'
           }
         ],
         featured: {
@@ -145,89 +147,90 @@ module.exports = {
         }
       },
       campfire: {
-        guides: [
+        blog: [
           {
-            icon: 'home',
-            title: 'Concepts',
-            to: '/guides/concepts'
+            icon: 'file-text',
+            title: 'Articles',
+            to: '/blog'
           },
+          // {
+          //   icon: 'home',
+          //   title: 'User Stories',
+          //   to: '/campfire/user-stories'
+          // },
           {
-            icon: 'home',
-            title: 'Features',
-            to: '/guides/features'
-          },
-          {
-            icon: 'home',
-            title: 'Directory Structure',
-            to: '/guides/directory-structure'
+            icon: 'pen-tool',
+            title: 'Ambassadors',
+            to: '/campfire/ambassadors'
           }
         ],
-        api: [
+        news: [
           {
-            icon: 'home',
-            title: 'Configuration',
-            to: '/guides/configuration-glossary'
+            icon: 'mail',
+            title: 'Newsletters',
+            to: '/campfire/newsletters'
           },
+          // {
+          //   icon: 'home',
+          //   title: 'Twitter',
+          //   href: 'https://twitter.com/nuxt_js'
+          // },
           {
-            icon: 'home',
-            title: 'Components',
-            to: '/guides/components-glossary'
-          },
-          {
-            icon: 'home',
-            title: 'Internals',
-            to: '/guides/internals-glossary'
+            icon: 'tag',
+            title: 'Releases',
+            to: '/campfire/releases'
           }
         ],
         featured: {
           icon: 'home',
           button: 'Get Started',
-          title: 'Discord Server',
+          title: 'Chat with us on Discord',
           description: 'Learn how to use NuxtJS for your website.',
           to: '/guides/get-started'
         }
       },
       community: {
-        guides: [
+        oss: [
           {
-            icon: 'home',
-            title: 'Concepts',
-            to: '/guides/concepts'
+            icon: 'users',
+            title: 'Contributors',
+            to: '/community/contributors'
           },
           {
-            icon: 'home',
-            title: 'Features',
-            to: '/guides/features'
+            icon: 'book',
+            title: 'Contribution Guide',
+            to: '/community/contribution-guide'
           },
           {
-            icon: 'home',
-            title: 'Directory Structure',
-            to: '/guides/directory-structure'
+            icon: 'star',
+            title: 'GitHub Repositories',
+            href: 'https://github.com/nuxt'
           }
         ],
-        api: [
+        support: [
           {
-            icon: 'home',
-            title: 'Configuration',
-            to: '/guides/configuration-glossary'
+            icon: 'award',
+            title: 'Sponsor NuxtJS',
+            to: '/community/donations'
           },
           {
-            icon: 'home',
-            title: 'Components',
-            to: '/guides/components-glossary'
+            icon: 'message-circle',
+            title: 'Support & Training',
+            to: '/community/support'
           },
           {
-            icon: 'home',
-            title: 'Internals',
-            to: '/guides/internals-glossary'
+            icon: 'shopping-cart',
+            title: 'The NuxtJS Shop',
+            href: 'https://shop.nuxtjs.com'
           }
         ],
         featured: {
           icon: 'home',
           button: 'Get Started',
-          title: 'GitHub Stars',
-          description: 'Learn how to use NuxtJS for your website.',
-          to: '/guides/get-started'
+          title: 'Join our Stargazers',
+          description:
+            'Share your love for the Nuxt.js framework to the open source community by starring our project on GitHub.',
+          to: 'https://github.com/nuxt/nuxt.js/stargazers'
         }
       }
     },

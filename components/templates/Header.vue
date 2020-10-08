@@ -1,7 +1,11 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-30 bg-light-elevatedSurface dark:bg-dark-elevatedSurface"
-    :class="{ shadow: !onTop }"
+    class="fixed top-0 left-0 right-0 z-30"
+    :class="{
+      shadow: !onTop,
+      'bg-light-surface dark:bg-dark-surface': primaryLink,
+      'bg-light-elevatedSurface dark:bg-dark-elevatedSurface': !primaryLink
+    }"
   >
     <!-- Primary Navigation-->
     <AtomContainer
@@ -22,8 +26,12 @@
         <!-- Menu Icon -->
         <svg-icon v-else name="feather/menu" class="h-5 w-5" />
       </button>
-      <!-- Logo: Home Link -->
+      <!-- Logo: Home Link / PrimaryLink Title-->
+      <h1 v-if="primaryLink" class="capitalize text-gray-900 text-base">
+        {{ primaryLink }}
+      </h1>
       <NuxtLink
+        v-else
         class="inline-block -mt-1 p-1"
         to="/"
         @click.native.right.stop.prevent="$router.push('/design')"
@@ -40,14 +48,13 @@ NUXTJS
         />
       </NuxtLink>
       <!-- Mobile: Search Button / Theme Button-->
-      <button v-if="showPrimary && !primaryLink" class="inline-block py-1 pr-1">
+      <button v-if="!primaryLink" class="inline-block py-1 pr-1">
         <!-- Theme Icon -->
-        <svg-icon name="feather/sun" class="h-5 w-5" />
-      </button>
-      <button v-else class="inline-block py-1 pr-1" @click="toggleMenu">
+        <svg-icon v-if="showPrimary" name="feather/sun" class="h-5 w-5" />
         <!-- Search Icon -->
-        <svg-icon name="feather/search" class="h-5 w-5" />
+        <svg-icon v-else name="feather/search" class="h-5 w-5" />
       </button>
+      <div v-else class="h-5 w-5"></div>
       <!-- Center Navigation -->
       <OrganismHeaderNav
         v-model="primaryLink"

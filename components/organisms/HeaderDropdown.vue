@@ -13,9 +13,9 @@
     v-show="current"
     class="absolute inset-x-0 transform shadow-dropdown bg-white"
   >
-    <div class="mx-auto container px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto container">
       <div
-        class="py-6 sm:py-8 lg:py-10 xl:pt-12 xl:pb-16 grid gap-y-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-5 border-t border-gray-200"
+        class="grid gap-y-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-5 border-t border-gray-200"
       >
         <div class="col-span-3 grid grid-cols-2">
           <MoleculeListLinks

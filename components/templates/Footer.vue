@@ -43,7 +43,7 @@
         <div class="flex">
           <DarkModeToggle />
         </div>
-        <OrganismFooterIcons />
+        <MoleculeListLinksIcons />
         <div class="text-right">
           <AppLangSelect
             :value="$i18n.locale"

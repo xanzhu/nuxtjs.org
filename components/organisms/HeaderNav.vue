@@ -1,35 +1,45 @@
 <template>
-  <nav class="hidden lg:flex lg:pt-1 xl:pt-0 mx-auto">
-    <ul class="flex text-center">
+  <nav
+    class="fixed top-15 bottom-0 right-0 left-0 z-30 bg-light-elevatedSurface py-4 px-8"
+  >
+    <ul class="bg-light-surface dark:bg-dark-surface rounded py-1 shadow-inner">
       <li
-        v-for="(links, link) in $t('header.links')"
+        v-for="(links, link, i) in primaryLinks"
         :key="link"
-        class="xl:px-6 lg:py-0 lg:px-4 py-2"
+        :class="{ 'border-t border-gray-200': i > 0 }"
       >
-        <button
-          type="button"
-          class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 inline-flex items-center space-x-2 text-base leading-6 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 capitalize tracking-wide font-medium"
-          :class="{ 'border-b-1 border-gray-900': value === link }"
+        <a
+          :href="'/' + link"
+          class="flex justify-between items-center px-4 py-3 leading-5 font-normal text-sm capitalize text-gray-700"
+          :class="{ 'border-b border-white': i < primaryLinks.length }"
           @click.prevent="$emit('input', value === link ? '' : link)"
         >
           <span>{{ link }}</span>
-          <!--
-            Heroicon name: chevron-down
-
-            Item active: "text-gray-600", Item inactive: "text-gray-400"
-          -->
-          <svg
-            class="block lg:hidden text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
+          <!-- Forward Icon -->
+          <svg-icon
+            name="feather/arrow-right-circle"
+            class="h-4 w-4 text-gray-500"
+          />
+        </a>
+      </li>
+    </ul>
+    <MoleculeListLinksIcons class="my-2" />
+    <ul class="bg-light-surface dark:bg-dark-surface rounded py-1 shadow-inner">
+      <li>
+        <a
+          href="/translations"
+          class="flex justify-between items-center px-4 py-3 leading-5 font-normal text-sm capitalize text-gray-700"
+          @click.prevent="
+            $emit('input', value === 'translations' ? '' : 'translations')
+          "
+        >
+          <span><b>[EN]</b> Change language</span>
+          <!-- Forward Icon -->
+          <svg-icon
+            name="feather/arrow-right-circle"
+            class="h-4 w-4 text-gray-500"
+          />
+        </a>
       </li>
     </ul>
   </nav>
@@ -41,6 +51,11 @@ export default {
     value: {
       type: String,
       required: true
+    }
+  },
+  computed: {
+    primaryLinks() {
+      return this.$t('header.links')
     }
   }
 }

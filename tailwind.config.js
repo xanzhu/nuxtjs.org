@@ -55,6 +55,7 @@ module.exports = {
           '0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.05)'
       },
       inset: {
+        15: '3.75rem',
         24: '6rem'
       },
       maxWidth: {

@@ -2,7 +2,7 @@
   <div>
     <TemplateHeader />
     <main
-      class="lg:block relative pt-16 lg:pt-24 bg-light-surface dark:bg-dark-surface transition-colors duration-300 ease-linear"
+      class="lg:block relative pt-15 lg:pt-19 bg-light-surface dark:bg-dark-surface transition-colors duration-300 ease-linear"
     >
       <Nuxt />
     </main>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-30"
+    class="fixed top-0 left-0 right-0 z-30 lg:py-2"
     :class="{
       shadow: !onTop,
       'bg-light-surface dark:bg-dark-surface': showPrimary,
@@ -51,7 +51,7 @@ NUXTJS
         <img
           src="@/assets/logos/nuxtjs.svg"
           alt="NuxtJS Logo"
-          class="h-5 w-auto inline-block"
+          class="h-5 lg:h-6 w-auto inline-block"
         />
       </NuxtLink>
       <!-- Mobile: Search Button / Theme Button-->

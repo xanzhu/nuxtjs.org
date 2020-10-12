@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-15 bottom-0 right-0 left-0 z-30 pt-4 p-8 overflow-y-auto bg-light-surface dark:bg-dark-surface lg:bg-light-elevatedSurface lg:dark:bg-dark-elevatedSurface"
+    class="fixed top-15 bottom-0 right-0 left-0 z-30 p-4 overflow-y-auto bg-light-surface dark:bg-dark-surface lg:bg-light-elevatedSurface lg:dark:bg-dark-elevatedSurface"
   >
     <AtomContainer>
       <div v-if="value">
@@ -19,7 +19,7 @@
       <div v-else>
         <!-- PrimaryLinks -->
         <h2
-          class="text-xs leading-5 font-semibold tracking-wide pb-2 text-gray-500 uppercase"
+          class="text-xs leading-5 font-semibold tracking-wide pb-2 text-light-textSecondary uppercase"
         >
           Navigation
         </h2>
@@ -33,7 +33,7 @@
           >
             <a
               :href="'/' + group"
-              class="flex justify-between items-center px-4 py-3 leading-5 font-normal text-sm capitalize text-gray-700"
+              class="group flex justify-between items-center p-4 leading-5 font-normal text-sm capitalize text-light-textPrimary hover:text-light-textDefault"
               :class="{ 'border-b border-white': i < navLinks.length }"
               @click.prevent="$emit('input', value === group ? '' : group)"
             >
@@ -41,14 +41,14 @@
               <!-- Forward Icon -->
               <svg-icon
                 name="feather/arrow-right-circle"
-                class="h-4 w-4 text-gray-500"
+                class="h-4 w-4 text-light-textPrimary group-hover:text-light-primary"
               />
             </a>
           </li>
         </ul>
         <!-- Translation Link -->
         <h2
-          class="text-xs leading-5 font-semibold tracking-wide pb-2 pt-8 text-gray-500 uppercase"
+          class="text-xs leading-5 font-semibold tracking-wide pb-2 pt-8 text-light-textSecondary uppercase"
         >
           Languages
         </h2>
@@ -58,7 +58,7 @@
           <li>
             <a
               href="/translations"
-              class="flex justify-between items-center px-4 py-3 leading-5 font-normal text-sm capitalize text-gray-700"
+              class="group flex justify-between items-center p-4 leading-5 font-normal text-sm capitalize text-light-textPrimary hover:text-light-textDefault"
               @click.prevent="
                 $emit('input', value === 'translations' ? '' : 'translations')
               "
@@ -67,7 +67,7 @@
               <!-- Forward Icon -->
               <svg-icon
                 name="feather/arrow-right-circle"
-                class="h-4 w-4 text-gray-500"
+                class="h-4 w-4 text-light-textSecondary group-hover:text-light-primary"
               />
             </a>
           </li>

@@ -4,11 +4,11 @@
       v-for="link in links"
       :key="link.icon"
       href="https://github.com/nuxt/nuxt.js"
-      class="inline-block p-1 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+      class="inline-block p-1 text-light-textSecondary hover:text-light-primary"
       target="_blank"
       rel="noopener"
     >
-      <svg-icon :name="'feather/' + link.icon" class="h-5 w-5 text-gray-500" />
+      <svg-icon :name="'feather/' + link.icon" class="h-5 w-5" />
     </a>
   </div>
 </template>

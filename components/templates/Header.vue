@@ -9,7 +9,7 @@
   >
     <!-- Primary Navigation-->
     <AtomContainer
-      class="text-light-textSecondary dark:bg-dark-textSecondary flex flex-wrap justify-between items-center py-4"
+      class="text-light-default dark:bg-dark-default flex flex-wrap justify-between items-center py-4"
     >
       <!-- Mobile: Menu Button / Close Button / Previous Button-->
       <button

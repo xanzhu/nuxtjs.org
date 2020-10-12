@@ -23,13 +23,13 @@ module.exports = {
           dark: '#07A377'
         },
         light: {
-          default: colors.gray,
+          primary: colors.green.default,
           border: colors.gray.lighter,
           surface: colors.gray.lightest,
           elevatedSurface: defaultTheme.colors.white,
           textDefault: colors.gray.darkest,
           textPrimary: colors.gray.dark,
-          textSecondary: colors.gray,
+          textSecondary: colors.gray.default,
           onSurfacePrimary: colors.gray.darker,
           onSurfaceSecondary: colors.gray.dark
         },

@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('./config/tailwind.colors.js')
 
 module.exports = {
   theme: {
@@ -22,11 +23,15 @@ module.exports = {
           dark: '#07A377'
         },
         light: {
-          surface: defaultTheme.colors.gray['100'],
-          onSurfacePrimary: '#2F495E',
-          onSurfaceSecondary: defaultTheme.colors.gray['600'],
+          default: colors.gray,
+          border: colors.gray.lighter,
+          surface: colors.gray.lightest,
           elevatedSurface: defaultTheme.colors.white,
-          border: defaultTheme.colors.gray['300']
+          textDefault: colors.gray.darkest,
+          textPrimary: colors.gray.dark,
+          textSecondary: colors.gray,
+          onSurfacePrimary: colors.gray.darker,
+          onSurfaceSecondary: colors.gray.dark
         },
         dark: {
           surface: '#2C3E50',

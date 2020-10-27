@@ -5,11 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'Quicksand',
-          // ...defaultTheme.fontFamily.sans
-          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
-        ]
+        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        mono: ['DM Mono', ...defaultTheme.fontFamily.mono]
       },
       fontSize: {
         ss: '0.666666rem'

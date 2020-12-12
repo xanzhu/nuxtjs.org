@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface">
     <HomeWelcome />
     <HomeWhy />
     <HomeCompanies />

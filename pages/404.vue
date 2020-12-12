@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative bg-light-elevatedSurface dark:bg-dark-elevatedSurface">
     <AppContainer class="pt-20">
       <div class="flex flex-wrap items-center justify-between">
         <h1
